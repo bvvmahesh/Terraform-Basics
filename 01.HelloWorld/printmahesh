@@ -1,3 +1,7 @@
 output "Message" {
   value = "Hello Mahesh"
 }
+
+output "Message_new" {
+  value = "Hello ganesh"
+}
