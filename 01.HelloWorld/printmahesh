@@ -1,0 +1,3 @@
+output "Message" {
+  value = "Hello Mahesh"
+}
