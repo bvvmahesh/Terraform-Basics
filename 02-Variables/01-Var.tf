@@ -67,3 +67,10 @@ variable "SAMPLE_ENV" {}
 output "EXAMPLE_OF_ENV_VARIABLES" {
   value = var.SAMPLE_ENV
 }
+
+## Input from tfvars
+
+variable "ENVIRONMENT" {}
+output "ENVIRONMENT_0F_TFVARS" {
+  value = var.ENVIRONMENT
+}
