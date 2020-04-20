@@ -52,5 +52,5 @@ variable "MAP" {
 }
 
 output "FRUIT_RED" {
-  value = var.MAP
+  value = var.MAP["red"]
 }
