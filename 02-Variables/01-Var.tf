@@ -54,3 +54,11 @@ variable "MAP" {
 output "FRUIT_RED" {
   value = var.MAP["red"]
 }
+
+## Take input from the user
+
+variable "SAMPLE" {}
+
+output "SAMPLE" {
+  value = var.SAMPLE
+}
