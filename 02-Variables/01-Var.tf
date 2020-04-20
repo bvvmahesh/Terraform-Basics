@@ -11,7 +11,7 @@ variable "BOOLEAN" {
 }
 
 variable "DEFAULT" {
-  value = "simple default string"
+  default = "simple default string"
 }
 
 variable "LIST" {
