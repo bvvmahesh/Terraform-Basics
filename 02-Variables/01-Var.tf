@@ -10,6 +10,13 @@ variable "BOOLEAN" {
   default = true
 }
 
+variable "DEFAULT" {
+  value = "simple default string"
+}
+
+variable "LIST" {
+  default = ["apple", "banana", "grapes"]
+}
 
 output "NAME" {
   value = var.NAME
@@ -22,4 +29,12 @@ output "NUMBER" {
 
 output "BOOLEAN" {
   value = var.BOOLEAN
+}
+
+output "DEFAULT" {
+  value = var.DEFAULT
+}
+
+output "LIST" {
+  value = var.LIST
 }
