@@ -62,3 +62,8 @@ variable "SAMPLE" {}
 output "SAMPLE" {
   value = var.SAMPLE
 }
+
+variable "SAMPLE_ENV" {}
+output "EXAMPLE_OF_ENV_VARIABLES" {
+  value = var.SAMPLE_ENV
+}
