@@ -40,5 +40,17 @@ output "LIST" {
 }
 
 output "LIST1" {
-  value = var.LIST[0][1]
+  value = var.LIST[0]
+}
+
+variable "MAP" {
+  default = {
+    "red" = "apple",
+    "green" = "mango",
+    "yellow" = "banana"
+  }
+}
+
+output "FRUIT_RED" {
+  value = var.MAP
 }
