@@ -7,7 +7,7 @@ variable "NUMBER" {
 }
 
 variable "BOOLEAN" {
-  value = true
+  default = true
 }
 
 
