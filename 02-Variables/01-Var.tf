@@ -40,5 +40,5 @@ output "LIST" {
 }
 
 output "LIST1" {
-  value = var.LIST[0]
+  value = var.LIST[0][1]
 }
