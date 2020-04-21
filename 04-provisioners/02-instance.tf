@@ -14,7 +14,7 @@ resource "aws_instance" "sample" {
       "cd /root",
       "export GIT_USER=bvvmahesh",
       "export GIT_PASSWORD=mahesh0524",
-      "git clone https://${GIT_USER}:${GIT_PASSWORD}@github.com/bvvmahesh/Shell-Scripting.git",
+      "git clone https://bvvmahesh:mahesh0524@github.com/bvvmahesh/Shell-Scripting.git",
       "env",
       "sh Shell-Scripting/robot-shop/project.sh"
     ]
