@@ -1,10 +1,16 @@
+## String variable
+
 variable "NAME" {
   default = "Devops"
 }
 
+## Number variable
+
 variable "NUMBER" {
   default = 100
 }
+
+## BOOLEAN Variable
 
 variable "BOOLEAN" {
   default = true
@@ -13,6 +19,8 @@ variable "BOOLEAN" {
 variable "DEFAULT" {
   default = "simple default string"
 }
+
+## LIST
 
 variable "LIST" {
   default = ["apple", "banana", "grapes"]
@@ -43,6 +51,8 @@ output "LIST1" {
   value = var.LIST[0]
 }
 
+## MAP
+
 variable "MAP" {
   default = {
     "red" = "apple",
@@ -62,6 +72,8 @@ variable "SAMPLE" {}
 output "SAMPLE" {
   value = var.SAMPLE
 }
+
+## ENVIRONMENT VARIABLES
 
 variable "SAMPLE_ENV" {}
 output "EXAMPLE_OF_ENV_VARIABLES" {
