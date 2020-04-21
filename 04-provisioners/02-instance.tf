@@ -12,7 +12,7 @@ resource "aws_instance" "sample" {
     }
     inline = [
       "cd /root",
-      "git clone https://bvvmahesh:Mahesh@0524@github.com/bvvmahesh/Shell-Scripting.git",
+      "git clone https://bvvmahesh:mahesh0524@github.com/bvvmahesh/Shell-Scripting.git",
       "sh Shell-Scripting/robot-shop/project.sh"
     ]
   }
