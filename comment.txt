@@ -1,1 +1,1 @@
-[RS-2] updating ec2 instance type.
+[RS-3] create an instance and configure robot-shop project with remote-exec provisioners.
