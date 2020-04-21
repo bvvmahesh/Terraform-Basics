@@ -1,1 +1,1 @@
-updating region in provider configuration
+[RS-2] updating ec2 instance type.
