@@ -1,1 +1,1 @@
-[RS-3] create an instance and configure robot-shop project with remote-exec provisioners.
+creating modules
