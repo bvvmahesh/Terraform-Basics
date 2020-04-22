@@ -1,26 +1,22 @@
-resource "aws_security_group" "allow-ssh" {
-  name        = var.security_group_name
-  description = var.security_group_name
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+provider "aws" {
+  region = "us-east-1"
+}
+## cart service
+## cart-service-dev-aws-us-east-1.devopsb46.xyz
 
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = {
-    Name = "allow_ssh"
+variable "SERVICE_INFO" {
+  default = {
+    name = "cart",
+    env = "dev",
+    region = "us-east-1",
+    domain = "devopsb46.xyz"
   }
 }
 
-variable "security_group_name" {}
-provider "aws" {
-  region = "us-east-1"
+locals {
+  name = "${var.SERVICE_INFO["name"]}-service-${var.SERVICE_INFO["env"]}-aws-${var.SERVICE_INFO["region"]}-${var.SERVICE_INFO["domain"]}"
+}
+
+output "FULL_NAME" {
+  value = local.name
 }
