@@ -22,5 +22,5 @@ resource "aws_security_group" "allow-ssh" {
 
 variable "security_group_name" {}
 provider "aws" {
-  region = "us-east-1 "
+  region = "us-east-1"
 }
