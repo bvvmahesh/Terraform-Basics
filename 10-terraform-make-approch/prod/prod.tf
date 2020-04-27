@@ -1,0 +1,3 @@
+module "PROD" {
+  source = "../module"
+}

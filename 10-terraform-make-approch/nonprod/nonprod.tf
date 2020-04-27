@@ -1,0 +1,3 @@
+module "NONPROD" {
+  source = "../module"
+}
