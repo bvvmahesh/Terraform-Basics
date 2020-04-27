@@ -1,9 +1,9 @@
 variable "DATA" {
   default = "Hello world"
 }
-provider "local" {}
+//provider "local" {}
 
-resource "local_file" "mahesh" {
+resource "local_file" "foo" {
   content     = var.DATA
   filename = "/tmp/foo.bar"
 }
